@@ -1,10 +1,11 @@
+import { CommonModule, NgIf } from '@angular/common';
 import { Component, signal } from '@angular/core';
 import { FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
 import { RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-root',
-  imports: [ReactiveFormsModule],
+  imports: [ReactiveFormsModule,NgIf,CommonModule],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
